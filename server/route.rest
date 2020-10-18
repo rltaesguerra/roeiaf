@@ -1,0 +1,31 @@
+GET http://localhost:3001/
+
+###
+
+GET http://localhost:3001/building
+
+###
+
+GET http://localhost:3001/building/2
+
+###
+
+POST http://localhost:3001/building/create/Castle HTTP/1.1
+content-type: application/json
+
+{
+    "building_name": "Castle"
+}
+
+###
+
+PUT http://localhost:3001/building/update/1 HTTP/1.1
+content-type: application/json
+
+{
+    "building_name": "Iron Mine"
+}
+
+###
+
+DELETE http://localhost:3001/building/delete/1
